@@ -1,0 +1,33 @@
+{
+    "name": "react_typescript_fm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack-dev-server --open --config webpack.config.js",
+        "build": "webpack --progress --color --config webpack.config.js"
+    },
+    "author": "cuizongbao",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.0.0-beta.47",
+        "@babel/plugin-proposal-class-properties": "^7.0.0-beta.47",
+        "@babel/preset-react": "^7.0.0-beta.47",
+        "babel-loader": "^8.0.0-beta.2",
+        "clean-webpack-plugin": "^0.1.19",
+        "css-loader": "^0.28.11",
+        "file-loader": "^1.1.11",
+        "html-webpack-plugin": "^3.2.0",
+        "source-map-loader": "^0.2.3",
+        "style-loader": "^0.21.0",
+        "ts-loader": "^4.3.0",
+        "webpack": "^4.8.3",
+        "webpack-cli": "^3.3.2",
+        "webpack-dev-server": "^3.1.4"
+    },
+    "dependencies": {
+        "@types/react-router-dom": "^4.2.6",
+        "react-router-dom": "^4.2.2",
+        "react-dom": "15.5.4",
+    }
+}
