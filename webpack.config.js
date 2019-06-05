@@ -21,7 +21,8 @@ module.exports = env => {
               },
         },
         plugins: [
-            new CleanWebpackPlugin(['dist']),
+            //CleanWebpackPlugin is A webpack plugin to remove/clean your build folder(s).
+            // new CleanWebpackPlugin(['dist']),
             new HtmlWebpackPlugin({
                 title: 'ts_react_fm',
                 template: './index.html',
@@ -47,8 +48,9 @@ module.exports = env => {
             ]
         },
         devServer: {
-            host: '0.0.0.0',
-            contentBase: path.resolve(__dirname, "dist"),
+            host: 'localhost',
+            // contentBase: path.resolve(__dirname, "dist"),
+            contentBase: './dist',
             inline:true,
             port: 8081,
             hot: true
